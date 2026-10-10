@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Concept illustration of a fruit harvesting robot with elevator lift and gripper"><title>Concept illustration of a fruit harvesting robot with elevator lift and gripper</title><defs>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#787876"/><stop offset=".44" stop-color="#50504e"/><stop offset="1" stop-color="#2a2a28"/></linearGradient>
+<linearGradient id="plate" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e6e6e4"/><stop offset=".52" stop-color="#babab8"/><stop offset="1" stop-color="#81817f"/></linearGradient>
+<linearGradient id="dark" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#292927"/><stop offset=".6" stop-color="#4e4e4c"/><stop offset="1" stop-color="#21211f"/></linearGradient>
+<linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffa479"/><stop offset="1" stop-color="#d86438"/></linearGradient>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#9f9f9d" stroke-width=".55" opacity=".23"/></pattern>
+<pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M-2 2L2-2M0 8L8 0M6 10L10 6" stroke="#686866" stroke-width=".7" opacity=".4"/></pattern>
+<filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="9"/></filter>
+<marker id="arrow" viewBox="0 0 7 7" refX="3.5" refY="3.5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L7 3.5 0 7" fill="none" stroke="#868684" stroke-width="1"/></marker>
+</defs><rect width="800" height="520" fill="#eeede8"/><rect width="800" height="520" fill="url(#grid)"/>
+<g stroke="#a6a6a4" stroke-width="1" fill="none" opacity=".7"><path d="M24 51V24H51M749 24H776V51M776 469V496H749M51 496H24V469"/></g>
+<g font-family="monospace" font-size="10" fill="#7c7c7a" letter-spacing="2"><text x="39" y="49">CONCEPT STUDY</text><text x="761" y="482" text-anchor="end">ENGINEERING / DESIGN</text></g>
+<ellipse cx="396" cy="437" rx="236" ry="30" fill="#5e5e5c" opacity=".14" filter="url(#shadow)"/>
+<!-- back wheel -->
+<g transform="translate(471 341) rotate(-15)"><ellipse rx="33" ry="46" fill="#343432" stroke="#8b8b89" stroke-width="1.4"/><ellipse rx="21" ry="31" fill="#6d6d6b" stroke="#b4b4b2"/><ellipse rx="8" ry="13" fill="#d98a58"/></g>
+<!-- isometric chassis -->
+<path d="M207 333L390 263 570 350 382 429Z" fill="url(#plate)" stroke="#535351" stroke-width="1.6"/>
+<path d="M207 333V365L382 455V429Z" fill="#4a4a48" stroke="#7c7c7a" stroke-width="1.6"/><path d="M382 429V455L570 377V350Z" fill="#3b3b39" stroke="#929290" stroke-width="1.5"/>
+<path d="M224 332L389 274 551 350 382 415Z" fill="#9c9c9a" stroke="#585856"/>
+<path d="M239 339L388 286 532 351 382 405Z" fill="#61615f" stroke="#c5c5c3"/>
+<g fill="none" stroke="#b2b2b0" stroke-width="1.1"><path d="M255 340L391 292 514 352M269 348L391 304 498 353M285 356L392 316 481 354M302 364L392 330 464 354M319 372L393 341 447 355"/></g>
+<!-- front wheel assemblies -->
+<g transform="translate(257 378) rotate(-18)"><ellipse rx="33" ry="49" fill="url(#dark)" stroke="#8d8d8b" stroke-width="1.5"/><ellipse rx="23" ry="35" fill="#787876" stroke="#c2c2c0"/><ellipse rx="10" ry="17" fill="#d98252" stroke="#573f2c"/><g stroke="#e0dfca" stroke-width="1.2"><path d="M0-30V-19M0 19V30M-19 0H-12M12 0H19M-12-23L-8-15M8 15L12 23M12-23L8-15M-8 15L-12 23"/></g></g>
+<g transform="translate(455 426) rotate(-18)"><ellipse rx="33" ry="49" fill="url(#dark)" stroke="#8d8d8b" stroke-width="1.5"/><ellipse rx="23" ry="35" fill="#787876" stroke="#c2c2c0"/><ellipse rx="10" ry="17" fill="#d98252" stroke="#573f2c"/><g stroke="#e0dfca" stroke-width="1.2"><path d="M0-30V-19M0 19V30M-19 0H-12M12 0H19M-12-23L-8-15M8 15L12 23M12-23L8-15M-8 15L-12 23"/></g></g>
+<!-- elevator towers -->
+<path d="M324 302V103L343 96 354 102V307L342 314Z" fill="url(#plate)" stroke="#575755" stroke-width="1.4"/><path d="M342 111V314M329 109V299" stroke="#61615f" stroke-width="3"/>
+<path d="M424 351V155L443 148 455 154V355L443 363Z" fill="url(#plate)" stroke="#575755" stroke-width="1.4"/><path d="M442 163V361M430 162V347" stroke="#61615f" stroke-width="3"/>
+<path d="M324 103L343 96 455 154 437 162Z" fill="#c3c3c1" stroke="#545452" stroke-width="1.4"/><path d="M324 103V119L437 178V162Z" fill="#626260" stroke="#9d9d9b"/><path d="M437 162V178L455 170V154Z" fill="#3b3b39" stroke="#a7a7a5"/>
+<path d="M324 299L342 292 455 348 437 356Z" fill="#a9a9a7" stroke="#545452"/><path d="M324 299V315L437 373V356Z" fill="#555553" stroke="#9f9f9d"/>
+<!-- cross bracing / belts -->
+<path d="M343 128L430 328M430 183L343 280" fill="none" stroke="#989896" stroke-width="6"/><path d="M349 131L442 333M442 185L348 289" fill="none" stroke="#d3d3d1" stroke-width="1.2"/>
+<path d="M336 122V293M443 180V340" fill="none" stroke="#323230" stroke-width="5" stroke-dasharray="3 2"/>
+<g fill="#e1c393" stroke="#70706e" stroke-width="1"><ellipse cx="337" cy="117" rx="6" ry="8"/><ellipse cx="443" cy="176" rx="6" ry="8"/><ellipse cx="337" cy="293" rx="6" ry="8"/><ellipse cx="443" cy="343" rx="6" ry="8"/></g>
+<!-- carriage elevation platform -->
+<path d="M343 188L399 167 499 217 443 239Z" fill="#a2a2a0" stroke="#5e5e5c" stroke-width="1.4"/><path d="M343 188V214L443 266V239Z" fill="#4b4b49" stroke="#a2a2a0"/><path d="M443 239V266L499 244V217Z" fill="#41413f" stroke="#a2a2a0"/>
+<path d="M354 194L392 182 414 193 376 209Z" fill="#de8551"/>
+<!-- end effector reach -->
+<path d="M478 228L539 204 550 211 488 237Z" fill="#c6c6c4" stroke="#535351"/><path d="M478 228V241L488 249V237L550 211V225L488 249" fill="#5f5f5d" stroke="#8d8d8b"/>
+<!-- gripper -->
+<path d="M539 204L565 194 582 205 557 215Z" fill="url(#orange)" stroke="#835735"/><path d="M539 204V226L557 237V215Z" fill="#ca7440" stroke="#835735"/><path d="M557 215V237L582 225V205Z" fill="#95603a" stroke="#cba078"/>
+<path d="M574 211L589 196 615 203 624 222 610 233M579 226L594 247 620 241 629 224 616 214" fill="none" stroke="#868684" stroke-width="7" stroke-linecap="round"/>
+<path d="M574 211L589 196 615 203 624 222M579 226L594 247 620 241 629 224" fill="none" stroke="#cbcbc9" stroke-width="1.7"/>
+<!-- fruit, stylized rather than photographic -->
+<circle cx="610" cy="223" r="18" fill="url(#orange)" stroke="#b37041" stroke-width="1.2"/><path d="M610 208L614 199" stroke="#60605e" stroke-width="3"/><path d="M611 206C613 192 629 197 621 204Z" fill="#777775" stroke="#5f5f5d"/>
+<!-- bin -->
+<path d="M353 324L413 303 484 338 423 363Z" fill="#aeaeac" stroke="#575755"/><path d="M353 324V361L423 400V363Z" fill="#6c6c6a" stroke="#999997"/><path d="M423 363V400L484 375V338Z" fill="#4b4b49" stroke="#a6a6a4"/><path d="M365 326L413 311 470 340 421 356Z" fill="#3c3c3a"/>
+<g fill="#dd8a4f" stroke="#885a37" stroke-width="1"><ellipse cx="395" cy="329" rx="12" ry="10"/><ellipse cx="419" cy="335" rx="13" ry="10"/><ellipse cx="441" cy="344" rx="11" ry="8"/></g>
+<!-- motor -->
+<path d="M292 306L312 298 335 310 315 319Z" fill="#71716f" stroke="#484846"/><path d="M292 306V333L315 347V319Z" fill="#41413f" stroke="#9c9c9a"/><path d="M315 319V347L335 337V310Z" fill="#4f4f4d" stroke="#9c9c9a"/>
+<path d="M300 313V329M305 316V332" stroke="#c4c4c2"/>
+<!-- engineering annotations -->
+<g fill="none" stroke="#929290" stroke-width="1"><path d="M351 153L242 98H135"/><path d="M588 233L649 287H714"/><path d="M301 369L182 420H81"/><path d="M298 105V297" marker-start="url(#arrow)" marker-end="url(#arrow)"/><path d="M315 104H288M315 298H288" stroke-dasharray="3 5"/></g>
+<g font-family="monospace" font-size="10" fill="#757573" letter-spacing="1.5"><text x="135" y="86">LIFT ASSEMBLY</text><text x="649" y="304">GRIPPER</text><text x="81" y="438">DRIVE SYSTEM</text></g></svg>

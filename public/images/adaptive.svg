@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Concept illustration of an adaptive legged robotics research platform"><title>Concept illustration of an adaptive legged robotics research platform</title><defs>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#787876"/><stop offset=".44" stop-color="#50504e"/><stop offset="1" stop-color="#2a2a28"/></linearGradient>
+<linearGradient id="plate" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e6e6e4"/><stop offset=".52" stop-color="#babab8"/><stop offset="1" stop-color="#81817f"/></linearGradient>
+<linearGradient id="dark" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#292927"/><stop offset=".6" stop-color="#4e4e4c"/><stop offset="1" stop-color="#21211f"/></linearGradient>
+<linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffa479"/><stop offset="1" stop-color="#d86438"/></linearGradient>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#9f9f9d" stroke-width=".55" opacity=".23"/></pattern>
+<pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M-2 2L2-2M0 8L8 0M6 10L10 6" stroke="#686866" stroke-width=".7" opacity=".4"/></pattern>
+<filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="9"/></filter>
+<marker id="arrow" viewBox="0 0 7 7" refX="3.5" refY="3.5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L7 3.5 0 7" fill="none" stroke="#868684" stroke-width="1"/></marker>
+</defs><rect width="800" height="520" fill="#eeede8"/><rect width="800" height="520" fill="url(#grid)"/>
+<g stroke="#a6a6a4" stroke-width="1" fill="none" opacity=".7"><path d="M24 51V24H51M749 24H776V51M776 469V496H749M51 496H24V469"/></g>
+<g font-family="monospace" font-size="10" fill="#7c7c7a" letter-spacing="2"><text x="39" y="49">CONCEPT STUDY</text><text x="761" y="482" text-anchor="end">ENGINEERING / DESIGN</text></g>
+<ellipse cx="412" cy="428" rx="258" ry="28" fill="#5b5b59" opacity=".15" filter="url(#shadow)"/>
+<!-- rear legs -->
+<g fill="none" stroke="#363634" stroke-width="17" stroke-linecap="round"><path d="M338 232L233 242 180 326M466 212L594 221 642 321"/></g>
+<g fill="url(#plate)" stroke="#494947" stroke-width="1.5"><path d="M227 228L258 234 211 289 187 282Z"/><path d="M565 228L588 215 621 271 595 283Z"/></g>
+<g fill="#494947" stroke="#949492" stroke-width="1.2"><circle cx="236" cy="244" r="21"/><circle cx="595" cy="224" r="21"/><circle cx="181" cy="326" r="16"/><circle cx="642" cy="321" r="16"/></g>
+<g fill="#d8794e" stroke="#40403e" stroke-width="1.5"><circle cx="236" cy="244" r="8"/><circle cx="595" cy="224" r="8"/></g>
+<path d="M164 324L185 317 210 332 211 344 178 353 151 339Z" fill="url(#dark)" stroke="#7b7b79"/><path d="M626 320L647 313 669 329 667 344 637 351 610 336Z" fill="url(#dark)" stroke="#7b7b79"/>
+<!-- horizontal chassis -->
+<path d="M300 234L456 181 563 233 408 300Z" fill="url(#plate)" stroke="#51514f" stroke-width="1.7"/>
+<path d="M300 234V286L408 352V300Z" fill="url(#metal)" stroke="#8a8a88" stroke-width="1.4"/>
+<path d="M408 300V352L563 282V233Z" fill="#3f3f3d" stroke="#898987" stroke-width="1.4"/>
+<path d="M320 235L452 192 541 233 408 288Z" fill="#d0d0ce" stroke="#757573"/>
+<g stroke="#6d6d6b" stroke-width="1" fill="none"><path d="M330 244L452 203 527 237M346 254L455 216 505 241M361 264L459 229 482 243"/></g>
+<!-- central housing -->
+<path d="M365 209L436 185 482 206 411 233Z" fill="#7b7b79" stroke="#3e3e3c" stroke-width="1.2"/>
+<path d="M365 209V239L411 264V233Z" fill="#444442" stroke="#90908e"/><path d="M411 233V264L482 236V206Z" fill="#343432" stroke="#90908e"/>
+<path d="M382 211L436 193 464 206 409 226Z" fill="url(#dark)"/>
+<path d="M389 212L401 208 422 218 410 222Z" fill="#f18454"/>
+<g fill="#aeaeac"><circle cx="331" cy="238" r="3"/><circle cx="457" cy="195" r="3"/><circle cx="538" cy="235" r="3"/><circle cx="408" cy="281" r="3"/></g>
+<!-- lidar tower -->
+<path d="M449 211V165L459 161V207Z" fill="#343432" stroke="#9e9e9c"/>
+<ellipse cx="455" cy="164" rx="24" ry="9" fill="#333331" stroke="#979795"/><path d="M431 151V164C431 174 479 174 479 164V151" fill="#50504e" stroke="#979795"/><ellipse cx="455" cy="151" rx="24" ry="9" fill="#bebebc" stroke="#686866"/><path d="M433 158C445 164 465 165 476 157" stroke="#f18454" stroke-width="3" fill="none"/>
+<!-- front pair articulated legs -->
+<g fill="none" stroke="#3b3b39" stroke-width="21" stroke-linecap="round"><path d="M322 281L258 353 211 418M500 304L557 358 590 431"/></g>
+<path d="M306 288L332 301 283 351 257 337Z" fill="url(#plate)" stroke="#494947" stroke-width="1.5"/><path d="M494 316L511 300 554 343 535 361Z" fill="url(#plate)" stroke="#494947" stroke-width="1.5"/>
+<path d="M273 370L249 357 221 403 237 416Z" fill="url(#plate)" stroke="#494947" stroke-width="1.4"/><path d="M554 380L571 371 587 413 572 422Z" fill="url(#plate)" stroke="#494947" stroke-width="1.4"/>
+<g fill="url(#dark)" stroke="#8a8a88" stroke-width="1.4"><ellipse cx="322" cy="285" rx="20" ry="26" transform="rotate(29 322 285)"/><ellipse cx="499" cy="305" rx="20" ry="26" transform="rotate(-36 499 305)"/><circle cx="258" cy="354" r="24"/><circle cx="556" cy="360" r="24"/><circle cx="212" cy="417" r="17"/><circle cx="591" cy="429" r="17"/></g>
+<g fill="url(#orange)" stroke="#5f5f5d" stroke-width="1.4"><circle cx="258" cy="354" r="11"/><circle cx="556" cy="360" r="11"/></g>
+<path d="M194 417L218 410 249 430 246 445 207 455 171 435Z" fill="url(#dark)" stroke="#8a8a88" stroke-width="1.4"/><path d="M570 428L598 421 634 438 632 454 592 465 553 446Z" fill="url(#dark)" stroke="#8a8a88" stroke-width="1.4"/>
+<path d="M176 434L207 444 246 432M560 446L592 452 629 440" stroke="#a8a8a6" stroke-width="1" fill="none"/>
+<!-- dimension/callouts -->
+<g fill="none" stroke="#949492" stroke-width="1"><path d="M150 276V419M139 283L146 275 151 284M138 409L146 419 151 409M305 154L557 154" marker-start="url(#arrow)" marker-end="url(#arrow)"/><path d="M305 166V142M558 225V142" stroke-dasharray="3 5"/><path d="M451 145L511 91H605M259 357L155 365H80" stroke="#bc6e47"/><circle cx="451" cy="145" r="3" stroke="#bc6e47"/></g>
+<g font-family="monospace" font-size="10" fill="#737371" letter-spacing="1.5"><text x="515" y="81">PERCEPTION</text><text x="80" y="383">JOINT CONTROL</text><text x="374" y="143">LEGGED PLATFORM</text></g></svg>

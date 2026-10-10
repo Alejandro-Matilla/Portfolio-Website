@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Conceptual sectional engineering illustration of a pneumatic valve and air lines"><title>Conceptual sectional engineering illustration of a pneumatic valve and air lines</title><defs>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#787876"/><stop offset=".44" stop-color="#50504e"/><stop offset="1" stop-color="#2a2a28"/></linearGradient>
+<linearGradient id="plate" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e6e6e4"/><stop offset=".52" stop-color="#babab8"/><stop offset="1" stop-color="#81817f"/></linearGradient>
+<linearGradient id="dark" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#292927"/><stop offset=".6" stop-color="#4e4e4c"/><stop offset="1" stop-color="#21211f"/></linearGradient>
+<linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffa479"/><stop offset="1" stop-color="#d86438"/></linearGradient>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#9f9f9d" stroke-width=".55" opacity=".23"/></pattern>
+<pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M-2 2L2-2M0 8L8 0M6 10L10 6" stroke="#686866" stroke-width=".7" opacity=".4"/></pattern>
+<filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="9"/></filter>
+<marker id="arrow" viewBox="0 0 7 7" refX="3.5" refY="3.5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L7 3.5 0 7" fill="none" stroke="#868684" stroke-width="1"/></marker>
+</defs><rect width="800" height="520" fill="#eeede8"/><rect width="800" height="520" fill="url(#grid)"/>
+<g stroke="#a6a6a4" stroke-width="1" fill="none" opacity=".7"><path d="M24 51V24H51M749 24H776V51M776 469V496H749M51 496H24V469"/></g>
+<g font-family="monospace" font-size="10" fill="#7c7c7a" letter-spacing="2"><text x="39" y="49">CONCEPT STUDY</text><text x="761" y="482" text-anchor="end">ENGINEERING / DESIGN</text></g>
+<ellipse cx="402" cy="417" rx="264" ry="25" fill="#5d5d5b" opacity=".14" filter="url(#shadow)"/>
+<!-- flexible pneumatic tubes -->
+<path d="M229 297C150 274 117 258 115 209 113 145 198 117 249 145" fill="none" stroke="#8b8b89" stroke-width="19"/>
+<path d="M229 297C150 274 117 258 115 209 113 145 198 117 249 145" fill="none" stroke="#b7b7b5" stroke-width="13"/>
+<path d="M229 292C153 269 123 249 121 208 119 151 196 123 249 150" fill="none" stroke="#d8d8d6" stroke-width="3"/>
+<path d="M590 281C665 260 697 293 698 343 699 394 647 416 586 400" fill="none" stroke="#3a3a38" stroke-width="19"/>
+<path d="M590 281C665 260 697 293 698 343 699 394 647 416 586 400" fill="none" stroke="#626260" stroke-width="12"/>
+<path d="M589 278C658 259 689 289 691 340" fill="none" stroke="#a4a4a2" stroke-width="3"/>
+<!-- valve outer shell -->
+<path d="M226 237L469 162 602 221 359 306Z" fill="url(#plate)" stroke="#565654" stroke-width="1.5"/>
+<path d="M226 237V360L359 426V306Z" fill="url(#metal)" stroke="#6d6d6b" stroke-width="1.5"/>
+<path d="M359 306V426L602 336V221Z" fill="#565654" stroke="#767674" stroke-width="1.5"/>
+<!-- front section cutaway -->
+<path d="M375 313L585 239V326L375 405Z" fill="#d7d7d5" stroke="#828280" stroke-width="1.5"/>
+<path d="M375 313L585 239V326L375 405Z" fill="url(#hatch)"/>
+<!-- channels and chamber -->
+<path d="M382 349L450 325 450 292 501 274 501 306 578 279V293L501 320V351L450 369V337L382 362Z" fill="#6b6b69" stroke="#434341" stroke-width="1.2"/>
+<path d="M382 352L450 329M501 309L578 282" fill="none" stroke="#ed9366" stroke-width="5"/>
+<path d="M459 293L491 282V354L459 366Z" fill="url(#orange)" stroke="#875439" stroke-width="1.2"/>
+<path d="M464 300L486 292V344L464 352Z" fill="#f6c399"/>
+<!-- upper stem assembly -->
+<path d="M435 251V182L463 172V241Z" fill="#5a5a58" stroke="#979795" stroke-width="1.3"/>
+<path d="M435 251L449 258 477 248 463 241V172L477 179V248" fill="#343432" stroke="#868684"/>
+<path d="M449 190V258" stroke="#c3c3c1" stroke-width="3"/>
+<path d="M416 176L451 164 496 184 461 197Z" fill="#7b7b79" stroke="#545452" stroke-width="1.5"/>
+<path d="M416 176V153L451 141 496 161V184L461 197 416 176" fill="url(#metal)" stroke="#868684" stroke-width="1.5"/>
+<path d="M416 153L451 141 496 161 461 174Z" fill="url(#plate)" stroke="#868684"/><path d="M461 174V197" stroke="#b4b4b2"/>
+<path d="M426 158L451 149 482 162 458 170Z" fill="#3d3d3b"/>
+<path d="M437 152L454 146" stroke="#f18454" stroke-width="3"/>
+<!-- spring section -->
+<path d="M442 203L460 214 441 217 460 228 441 231 460 242 442 245" fill="none" stroke="#ccccca" stroke-width="3"/>
+<!-- port collars -->
+<path d="M202 286L219 278 240 289V312L223 321 202 309Z" fill="url(#plate)" stroke="#5d5d5b" stroke-width="1.4"/>
+<ellipse cx="204" cy="298" rx="10" ry="15" fill="#565654" stroke="#9d9d9b"/><path d="M214 283V314M220 283V317M227 287V315" stroke="#858583" stroke-width="1"/>
+<path d="M578 271L596 264 616 275V294L599 303 578 291Z" fill="url(#plate)" stroke="#5d5d5b" stroke-width="1.4"/><ellipse cx="614" cy="284" rx="7" ry="12" fill="#484846" stroke="#a0a09e"/>
+<!-- mount and bolts -->
+<path d="M259 369L285 357 315 373 315 389 285 403 259 389Z" fill="#41413f" stroke="#8d8d8b"/><path d="M501 374L530 363 555 374 555 389 529 399 501 389Z" fill="#41413f" stroke="#8d8d8b"/>
+<g fill="#d5d5d3" stroke="#6b6b69" stroke-width="1"><ellipse cx="255" cy="250" rx="5" ry="3"/><ellipse cx="470" cy="181" rx="5" ry="3"/><ellipse cx="570" cy="224" rx="5" ry="3"/><ellipse cx="353" cy="289" rx="5" ry="3"/></g>
+<path d="M265 271L292 284V328L265 315Z" fill="#333331" stroke="#969694"/><path d="M270 281L286 289M270 288L286 296M270 295L286 303" stroke="#c2c2c0" stroke-width="1.1"/>
+<!-- annotations -->
+<g fill="none" stroke="#8c8c8a" stroke-width="1"><path d="M469 346L521 421H645"/><path d="M446 199L376 101H269"/><path d="M113 193H60V130"/><path d="M390 434L594 358" marker-start="url(#arrow)" marker-end="url(#arrow)"/><path d="M381 419L392 446M589 337L605 376" stroke-dasharray="3 5"/></g>
+<g font-family="monospace" font-size="10" fill="#727270" letter-spacing="1.5"><text x="521" y="439">VALVE SECTION</text><text x="269" y="91">ACTUATOR</text><text x="55" y="119">AIR LINE</text></g></svg>

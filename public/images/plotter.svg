@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Concept illustration of a Cartesian pen plotter with gantry and pen carriage"><title>Concept illustration of a Cartesian pen plotter with gantry and pen carriage</title><defs>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#787876"/><stop offset=".44" stop-color="#50504e"/><stop offset="1" stop-color="#2a2a28"/></linearGradient>
+<linearGradient id="plate" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e6e6e4"/><stop offset=".52" stop-color="#babab8"/><stop offset="1" stop-color="#81817f"/></linearGradient>
+<linearGradient id="dark" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#292927"/><stop offset=".6" stop-color="#4e4e4c"/><stop offset="1" stop-color="#21211f"/></linearGradient>
+<linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffa479"/><stop offset="1" stop-color="#d86438"/></linearGradient>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#9f9f9d" stroke-width=".55" opacity=".23"/></pattern>
+<pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M-2 2L2-2M0 8L8 0M6 10L10 6" stroke="#686866" stroke-width=".7" opacity=".4"/></pattern>
+<filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="9"/></filter>
+<marker id="arrow" viewBox="0 0 7 7" refX="3.5" refY="3.5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L7 3.5 0 7" fill="none" stroke="#868684" stroke-width="1"/></marker>
+</defs><rect width="800" height="520" fill="#eeede8"/><rect width="800" height="520" fill="url(#grid)"/>
+<g stroke="#a6a6a4" stroke-width="1" fill="none" opacity=".7"><path d="M24 51V24H51M749 24H776V51M776 469V496H749M51 496H24V469"/></g>
+<g font-family="monospace" font-size="10" fill="#7c7c7a" letter-spacing="2"><text x="39" y="49">CONCEPT STUDY</text><text x="761" y="482" text-anchor="end">ENGINEERING / DESIGN</text></g>
+<ellipse cx="401" cy="415" rx="256" ry="28" fill="#5d5d5b" opacity=".15" filter="url(#shadow)"/>
+<!-- bed / feet -->
+<path d="M133 308L444 190 668 299 354 428Z" fill="url(#plate)" stroke="#5a5a58" stroke-width="1.6"/>
+<path d="M133 308V344L354 458V428Z" fill="#454543" stroke="#828280" stroke-width="1.5"/><path d="M354 428V458L668 327V299Z" fill="#3b3b39" stroke="#8d8d8b" stroke-width="1.5"/>
+<path d="M152 328V367L176 380 190 374V347M608 329V361L630 372 643 366V340M329 434V475L351 488 372 479V450" fill="url(#dark)" stroke="#8d8d8b" stroke-width="1.4"/>
+<!-- paper -->
+<path d="M193 309L443 215 606 295 355 397Z" fill="#f7f6ec" stroke="#c4c4c2" stroke-width="1"/>
+<path d="M224 309L443 229 575 294 356 383Z" fill="none" stroke="#b0b0ae" stroke-width=".8" stroke-dasharray="3 4"/>
+<path d="M294 328C324 274 429 257 460 276 494 298 380 345 397 363 410 377 450 337 486 325" fill="none" stroke="#df8251" stroke-width="2.5"/>
+<path d="M281 341L449 277M366 249L477 303" fill="none" stroke="#d4d4d2" stroke-width="1"/>
+<!-- rear rail -->
+<path d="M174 284L447 180 471 193 200 299Z" fill="#a3a3a1" stroke="#434341" stroke-width="1.5"/><path d="M174 284V299L200 314V299Z" fill="#5f5f5d" stroke="#878785"/><path d="M200 299V314L471 207V193Z" fill="#50504e" stroke="#8a8a88"/>
+<path d="M195 284L452 187" fill="none" stroke="#d9d9d7" stroke-width="4"/>
+<!-- forward rail -->
+<path d="M365 394L634 285 656 297 386 409Z" fill="#a3a3a1" stroke="#434341" stroke-width="1.5"/><path d="M365 394V410L386 422V409Z" fill="#5f5f5d" stroke="#878785"/><path d="M386 409V422L656 311V297Z" fill="#50504e" stroke="#8a8a88"/>
+<path d="M381 396L639 292" fill="none" stroke="#d9d9d7" stroke-width="4"/>
+<!-- portal legs -->
+<path d="M312 228V147L338 137V234L324 240Z" fill="url(#dark)" stroke="#90908e" stroke-width="1.5"/>
+<path d="M312 147L325 153 338 147M325 153V237" stroke="#c7c7c5" fill="none"/>
+<path d="M499 365V279L525 269V369L512 377Z" fill="url(#dark)" stroke="#90908e" stroke-width="1.5"/>
+<path d="M499 279L512 285 525 279M512 285V372" stroke="#c7c7c5" fill="none"/>
+<!-- gantry beam -->
+<path d="M309 142L335 132 532 242 506 253Z" fill="#9d9d9b" stroke="#494947" stroke-width="1.4"/>
+<path d="M309 142V172L506 283V253Z" fill="#4a4a48" stroke="#7b7b79" stroke-width="1.5"/><path d="M506 253V283L532 272V242Z" fill="#343432" stroke="#8f8f8d"/>
+<path d="M318 150L504 257" fill="none" stroke="#c3c3c1" stroke-width="4"/>
+<path d="M318 165L504 271" fill="none" stroke="#232321" stroke-width="4"/>
+<!-- motor box -->
+<path d="M290 140L314 130 339 145 316 155Z" fill="#70706e" stroke="#323230"/><path d="M290 140V179L316 194V155Z" fill="#353533" stroke="#90908e"/><path d="M316 155V194L339 183V145Z" fill="#555553" stroke="#afafad"/><ellipse cx="303" cy="165" rx="7" ry="10" fill="#adadab" stroke="#4d4d4b"/>
+<!-- pen carriage -->
+<path d="M412 195L435 185 472 207 447 218Z" fill="url(#orange)" stroke="#945b3b" stroke-width="1.4"/><path d="M412 195V233L447 254V218Z" fill="#d47444" stroke="#945b3b" stroke-width="1.4"/><path d="M447 218V254L472 243V207Z" fill="#9a542f" stroke="#ce8453"/>
+<path d="M421 209L435 218V242L421 233Z" fill="#4a4a48" stroke="#e2c2a0"/>
+<path d="M440 239V292L452 299V246Z" fill="#c2c2c0" stroke="#5d5d5b" stroke-width="1.2"/><path d="M445 294L451 298 448 311Z" fill="#343432"/><path d="M443 254L449 257V285L443 282Z" fill="#f18454"/>
+<!-- wiring belt -->
+<path d="M329 127C353 101 385 123 405 141L473 180C492 192 517 219 529 239" fill="none" stroke="#3d3d3b" stroke-width="8" stroke-dasharray="7 3"/>
+<path d="M330 127C353 101 385 123 405 141L473 180C492 192 517 219 529 239" fill="none" stroke="#a4a4a2" stroke-width="1.2"/>
+<!-- control electronics -->
+<path d="M558 319L590 307 625 325 592 339Z" fill="#666664" stroke="#3d3d3b"/><path d="M558 319V340L592 359V339Z" fill="#333331" stroke="#898987"/><path d="M592 339V359L625 346V325Z" fill="#525250" stroke="#898987"/><path d="M569 322L590 314 612 325 591 333Z" fill="#e98b57"/>
+<!-- annotation -->
+<g fill="none" stroke="#949492" stroke-width="1"><path d="M448 205L532 120H637"/><circle cx="448" cy="205" r="3"/><path d="M214 374L135 422H76"/><path d="M147 263L431 153" marker-start="url(#arrow)" marker-end="url(#arrow)"/><path d="M161 277L142 252M440 178L427 145" stroke-dasharray="3 5"/></g>
+<g font-family="monospace" font-size="10" fill="#737371" letter-spacing="1.5"><text x="534" y="108">PEN CARRIAGE</text><text x="76" y="440">XY MOTION</text></g></svg>

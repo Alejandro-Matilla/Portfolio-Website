@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Concept illustration of a two servo parallel manipulator on a wheeled robot transferring a cube between shelves"><title>Concept illustration of a two servo parallel manipulator on a wheeled robot transferring a cube between shelves</title><defs>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#787876"/><stop offset=".44" stop-color="#50504e"/><stop offset="1" stop-color="#2a2a28"/></linearGradient>
+<linearGradient id="plate" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e6e6e4"/><stop offset=".52" stop-color="#babab8"/><stop offset="1" stop-color="#81817f"/></linearGradient>
+<linearGradient id="dark" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#292927"/><stop offset=".6" stop-color="#4e4e4c"/><stop offset="1" stop-color="#21211f"/></linearGradient>
+<linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffa479"/><stop offset="1" stop-color="#d86438"/></linearGradient>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#9f9f9d" stroke-width=".55" opacity=".23"/></pattern>
+<pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M-2 2L2-2M0 8L8 0M6 10L10 6" stroke="#686866" stroke-width=".7" opacity=".4"/></pattern>
+<filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="9"/></filter>
+<marker id="arrow" viewBox="0 0 7 7" refX="3.5" refY="3.5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L7 3.5 0 7" fill="none" stroke="#868684" stroke-width="1"/></marker>
+</defs><rect width="800" height="520" fill="#eeede8"/><rect width="800" height="520" fill="url(#grid)"/>
+<g stroke="#a6a6a4" stroke-width="1" fill="none" opacity=".7"><path d="M24 51V24H51M749 24H776V51M776 469V496H749M51 496H24V469"/></g>
+<g font-family="monospace" font-size="10" fill="#7c7c7a" letter-spacing="2"><text x="39" y="49">CONCEPT STUDY</text><text x="761" y="482" text-anchor="end">ENGINEERING / DESIGN</text></g>
+<ellipse cx="316" cy="431" rx="211" ry="22" fill="#5b5b59" opacity=".12" filter="url(#shadow)"/>
+<!-- Three shelf target heights. -->
+<g fill="none" stroke="#93938f" stroke-width="2"><path d="M557 117V424M696 117V424M557 424H711"/><path d="M550 177H704M550 273H704M550 369H704"/></g>
+<g fill="#b8b8b4" stroke="#767674" stroke-width="1.2"><path d="M543 165H709V177H543Z"/><path d="M543 261H709V273H543Z"/><path d="M543 357H709V369H543Z"/></g>
+<g fill="none" stroke="#b5b5b1" stroke-dasharray="4 6" stroke-width="1.2"><path d="M420 171H536M420 267H536M420 363H536"/></g>
+<g font-family="monospace" font-size="10" letter-spacing="1.5" fill="#83837f"><text x="719" y="175">01</text><text x="719" y="271">02</text><text x="719" y="367">03</text></g>
+<!-- Romi-style low circular mobile chassis. -->
+<path d="M147 374V403C147 429 409 429 409 403V374" fill="url(#dark)" stroke="#777775" stroke-width="1.5"/>
+<ellipse cx="278" cy="374" rx="131" ry="34" fill="url(#plate)" stroke="#5b5b59" stroke-width="1.5"/>
+<ellipse cx="278" cy="374" rx="103" ry="24" fill="#bfbfbb" stroke="#999995"/>
+<path d="M170 365V405" stroke="#323230" stroke-width="31" stroke-linecap="round"/><path d="M172 369V402" stroke="#696965" stroke-width="20" stroke-linecap="round"/>
+<path d="M388 365V405" stroke="#323230" stroke-width="31" stroke-linecap="round"/><path d="M386 369V402" stroke="#696965" stroke-width="20" stroke-linecap="round"/>
+<!-- Two servo housings and parallel links. -->
+<g fill="url(#metal)" stroke="#5c5c5a" stroke-width="1.5"><rect x="207" y="335" width="39" height="39" rx="3"/><rect x="318" y="335" width="39" height="39" rx="3"/></g>
+<g fill="none" stroke="#444442" stroke-width="17" stroke-linecap="round"><path d="M227 347L191 263L300 207M337 347L402 263L379 207"/></g>
+<g fill="none" stroke="url(#plate)" stroke-width="10" stroke-linecap="round"><path d="M227 347L191 263L300 207M337 347L402 263L379 207"/></g>
+<path d="M211 348L178 265L286 209M351 348L415 264L394 209" fill="none" stroke="#7d7d79" stroke-width="3"/>
+<g fill="url(#dark)" stroke="#9b9b97" stroke-width="1.3"><circle cx="227" cy="347" r="16"/><circle cx="337" cy="347" r="16"/><circle cx="191" cy="263" r="13"/><circle cx="402" cy="263" r="13"/><circle cx="300" cy="207" r="11"/><circle cx="379" cy="207" r="11"/></g>
+<g fill="#e28050"><circle cx="227" cy="347" r="6"/><circle cx="337" cy="347" r="6"/></g>
+<!-- Moving platform, end tool, and carried cube. -->
+<path d="M289 196H393V212H289Z" fill="url(#plate)" stroke="#5f5f5d" stroke-width="1.3"/>
+<path d="M393 201H473" stroke="#484846" stroke-width="9"/>
+<path d="M468 186V216H492M469 189H492" fill="none" stroke="#666662" stroke-width="4"/>
+<path d="M491 183L516 174L535 185L510 195Z" fill="#f4b18d" stroke="#955f41"/><path d="M491 183V210L510 222V195Z" fill="#da7849" stroke="#955f41"/><path d="M510 195V222L535 211V185Z" fill="#a85534" stroke="#955f41"/>
+<g fill="none" stroke="#979793" stroke-width="1"><path d="M202 352L113 303H59M354 356L449 418H509M344 203L382 104H491"/><path d="M513 176V147H578"/></g>
+<g font-family="monospace" font-size="10" letter-spacing="1.5" fill="#737371"><text x="59" y="292">SERVO DRIVE</text><text x="447" y="438">MOBILE BASE</text><text x="387" y="93">PARALLEL KINEMATICS</text><text x="582" y="150">TRANSFER</text></g>
+</svg>

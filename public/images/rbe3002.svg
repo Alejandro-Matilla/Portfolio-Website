@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Concept illustration of a lidar TurtleBot with a mapped corridor and planned navigation path"><title>Concept illustration of a lidar TurtleBot with a mapped corridor and planned navigation path</title><defs>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#787876"/><stop offset=".44" stop-color="#50504e"/><stop offset="1" stop-color="#2a2a28"/></linearGradient>
+<linearGradient id="plate" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e6e6e4"/><stop offset=".52" stop-color="#babab8"/><stop offset="1" stop-color="#81817f"/></linearGradient>
+<linearGradient id="dark" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#292927"/><stop offset=".6" stop-color="#4e4e4c"/><stop offset="1" stop-color="#21211f"/></linearGradient>
+<linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffa479"/><stop offset="1" stop-color="#d86438"/></linearGradient>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#9f9f9d" stroke-width=".55" opacity=".23"/></pattern>
+<pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M-2 2L2-2M0 8L8 0M6 10L10 6" stroke="#686866" stroke-width=".7" opacity=".4"/></pattern>
+<filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="9"/></filter>
+<marker id="arrow" viewBox="0 0 7 7" refX="3.5" refY="3.5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L7 3.5 0 7" fill="none" stroke="#868684" stroke-width="1"/></marker>
+</defs><rect width="800" height="520" fill="#eeede8"/><rect width="800" height="520" fill="url(#grid)"/>
+<g stroke="#a6a6a4" stroke-width="1" fill="none" opacity=".7"><path d="M24 51V24H51M749 24H776V51M776 469V496H749M51 496H24V469"/></g>
+<g font-family="monospace" font-size="10" fill="#7c7c7a" letter-spacing="2"><text x="39" y="49">CONCEPT STUDY</text><text x="761" y="482" text-anchor="end">ENGINEERING / DESIGN</text></g>
+<!-- Abstract occupancy map and its corridor network. -->
+<g fill="#d6d6d0" stroke="#a2a29c" stroke-width="1.2"><path d="M83 115H271V145H113V250H218V280H83Z"/><path d="M271 115H392V201H362V145H271Z"/><path d="M249 219H362V316H332V249H249Z"/><path d="M113 301H276V331H143V418H113Z"/><path d="M305 354H421V383H335V434H305Z"/><path d="M416 115H674V145H446V200H416Z"/><path d="M466 176H644V262H615V207H495V288H466Z"/><path d="M676 176H706V337H676Z"/></g>
+<g fill="url(#hatch)" opacity=".5"><path d="M83 115H271V145H113V250H218V280H83Z"/><path d="M249 219H362V316H332V249H249Z"/><path d="M466 176H644V262H615V207H495V288H466Z"/></g>
+<path d="M177 186H321V174H403V235H430V321H477L537 350" fill="none" stroke="#df8050" stroke-width="3" stroke-dasharray="7 7" stroke-linecap="round" stroke-linejoin="round"/>
+<g fill="#eeede8" stroke="#df8050" stroke-width="2"><circle cx="177" cy="186" r="5"/><circle cx="321" cy="186" r="5"/><circle cx="403" cy="174" r="5"/><circle cx="430" cy="235" r="5"/><circle cx="430" cy="321" r="5"/></g>
+<g stroke="#bababa" stroke-width="1" opacity=".65"><path d="M536 260L456 218M536 260L453 279M536 260L552 170M536 260L633 218M536 260L655 291"/></g>
+<!-- Low TurtleBot platform, shown as a generic engineering concept. -->
+<ellipse cx="569" cy="424" rx="146" ry="21" fill="#5b5b59" opacity=".16" filter="url(#shadow)"/>
+<path d="M442 367V401C442 439 696 439 696 401V367" fill="url(#dark)" stroke="#7f7f7b" stroke-width="1.5"/>
+<path d="M450 373V403" stroke="#30302e" stroke-width="31" stroke-linecap="round"/><path d="M452 378V403" stroke="#73736f" stroke-width="18" stroke-linecap="round"/>
+<path d="M685 373V403" stroke="#30302e" stroke-width="31" stroke-linecap="round"/><path d="M683 378V403" stroke="#73736f" stroke-width="18" stroke-linecap="round"/>
+<ellipse cx="569" cy="367" rx="127" ry="44" fill="url(#plate)" stroke="#626260" stroke-width="1.5"/>
+<ellipse cx="569" cy="364" rx="106" ry="33" fill="#bebeba" stroke="#8d8d89" stroke-width="1"/>
+<path d="M489 355V318M646 355V318M552 397V352" stroke="#545452" stroke-width="9"/>
+<path d="M475 306L575 278L659 310L559 344Z" fill="url(#plate)" stroke="#686866" stroke-width="1.5"/>
+<path d="M475 306V318L559 355V344Z" fill="#686864" stroke="#898985"/><path d="M559 344V355L659 322V310Z" fill="#41413f" stroke="#898985"/>
+<path d="M529 314L570 300L601 313L560 327Z" fill="#373735" stroke="#90908c"/>
+<path d="M547 292V258L565 252V284Z" fill="#41413f" stroke="#a3a39f"/>
+<path d="M527 246V265C527 280 597 280 597 265V246" fill="url(#metal)" stroke="#898985" stroke-width="1.5"/>
+<ellipse cx="562" cy="246" rx="35" ry="13" fill="url(#plate)" stroke="#727270" stroke-width="1.5"/>
+<ellipse cx="562" cy="244" rx="16" ry="6" fill="#464644"/>
+<path d="M530 262Q561 276 594 262" fill="none" stroke="#e28050" stroke-width="4"/>
+<g fill="#60605c"><circle cx="491" cy="308" r="3"/><circle cx="576" cy="285" r="3"/><circle cx="642" cy="310" r="3"/><circle cx="559" cy="336" r="3"/></g>
+<g fill="none" stroke="#989894" stroke-width="1"><path d="M562 243L607 94H706M212 186L202 77H109M438 321L393 440H229"/></g>
+<g font-family="monospace" font-size="10" letter-spacing="1.5" fill="#737371"><text x="109" y="69">SLAM / MAPPING</text><text x="606" y="83">LIDAR</text><text x="229" y="457">PATH PLANNING</text></g>
+</svg>

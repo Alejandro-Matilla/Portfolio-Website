@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Concept illustration of a robotic arm sorting colored balls on a checkerboard using computer vision"><title>Concept illustration of a robotic arm sorting colored balls on a checkerboard using computer vision</title><defs>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#787876"/><stop offset=".44" stop-color="#50504e"/><stop offset="1" stop-color="#2a2a28"/></linearGradient>
+<linearGradient id="plate" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e6e6e4"/><stop offset=".52" stop-color="#babab8"/><stop offset="1" stop-color="#81817f"/></linearGradient>
+<linearGradient id="dark" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#292927"/><stop offset=".6" stop-color="#4e4e4c"/><stop offset="1" stop-color="#21211f"/></linearGradient>
+<linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffa479"/><stop offset="1" stop-color="#d86438"/></linearGradient>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#9f9f9d" stroke-width=".55" opacity=".23"/></pattern>
+<pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M-2 2L2-2M0 8L8 0M6 10L10 6" stroke="#686866" stroke-width=".7" opacity=".4"/></pattern>
+<filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="9"/></filter>
+<marker id="arrow" viewBox="0 0 7 7" refX="3.5" refY="3.5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L7 3.5 0 7" fill="none" stroke="#868684" stroke-width="1"/></marker>
+</defs><rect width="800" height="520" fill="#eeede8"/><rect width="800" height="520" fill="url(#grid)"/>
+<g stroke="#a6a6a4" stroke-width="1" fill="none" opacity=".7"><path d="M24 51V24H51M749 24H776V51M776 469V496H749M51 496H24V469"/></g>
+<g font-family="monospace" font-size="10" fill="#7c7c7a" letter-spacing="2"><text x="39" y="49">CONCEPT STUDY</text><text x="761" y="482" text-anchor="end">ENGINEERING / DESIGN</text></g>
+<ellipse cx="400" cy="435" rx="275" ry="21" fill="#5b5b59" opacity=".12" filter="url(#shadow)"/>
+<!-- Work surface with schematic calibration checkerboard. -->
+<path d="M309 293L510 219L720 315L520 414Z" fill="#bbbcb7" stroke="#7b7b77" stroke-width="1.4"/>
+<path d="M309 293V306L520 431V414Z" fill="#777773" stroke="#8e8e8a"/><path d="M520 414V431L720 330V315Z" fill="#4d4d49" stroke="#8e8e8a"/>
+<g transform="matrix(1.44 .65 -1.38 .61 505 241)">
+<rect width="128" height="128" fill="#e3e3df" stroke="#8b8b87" stroke-width="1"/>
+<g fill="#646460"><path d="M0 0H16V16H0ZM32 0H48V16H32ZM64 0H80V16H64ZM96 0H112V16H96ZM16 16H32V32H16ZM48 16H64V32H48ZM80 16H96V32H80ZM112 16H128V32H112ZM0 32H16V48H0ZM32 32H48V48H32ZM64 32H80V48H64ZM96 32H112V48H96ZM16 48H32V64H16ZM48 48H64V64H48ZM80 48H96V64H80ZM112 48H128V64H112ZM0 64H16V80H0ZM32 64H48V80H32ZM64 64H80V80H64ZM96 64H112V80H96ZM16 80H32V96H16ZM48 80H64V96H48ZM80 80H96V96H80ZM112 80H128V96H112ZM0 96H16V112H0ZM32 96H48V112H32ZM64 96H80V112H64ZM96 96H112V112H96ZM16 112H32V128H16ZM48 112H64V128H48ZM80 112H96V128H80ZM112 112H128V128H112Z"/></g>
+</g>
+<!-- Robot arm and rotary joints. -->
+<ellipse cx="241" cy="401" rx="82" ry="24" fill="url(#plate)" stroke="#636361" stroke-width="1.5"/>
+<path d="M159 399V414C159 447 323 447 323 414V399" fill="url(#dark)" stroke="#8b8b87"/>
+<ellipse cx="241" cy="399" rx="82" ry="24" fill="url(#plate)" stroke="#696965"/>
+<path d="M211 385V346H270V385Q242 399 211 385Z" fill="url(#metal)" stroke="#83837f"/>
+<g fill="none" stroke="#41413f" stroke-width="28" stroke-linecap="round"><path d="M241 349L204 227L326 142L443 221"/></g>
+<g fill="none" stroke="url(#plate)" stroke-width="18" stroke-linecap="round"><path d="M241 349L204 227L326 142L443 221"/></g>
+<path d="M229 341L193 228L320 136M211 239L245 342M337 150L437 215" fill="none" stroke="#959591" stroke-width="3"/>
+<g fill="url(#dark)" stroke="#a0a09c" stroke-width="1.5"><circle cx="241" cy="349" r="25"/><circle cx="204" cy="227" r="27"/><circle cx="326" cy="142" r="25"/><circle cx="443" cy="221" r="20"/></g>
+<g fill="url(#orange)" stroke="#777773"><circle cx="241" cy="349" r="11"/><circle cx="204" cy="227" r="12"/><circle cx="326" cy="142" r="10"/></g>
+<path d="M443 224L468 245V268" fill="none" stroke="#50504c" stroke-width="15" stroke-linecap="round"/>
+<path d="M453 263H483V278H453Z" fill="url(#plate)" stroke="#777773"/>
+<path d="M455 276L451 296L458 302M481 276L485 296L478 302" fill="none" stroke="#646460" stroke-width="4"/>
+<!-- Colored balls retain a muted engineering palette. -->
+<g stroke-width="1.2"><circle cx="468" cy="301" r="12" fill="#e28050" stroke="#a96745"/><circle cx="583" cy="318" r="14" fill="#8eaaa1" stroke="#5f7770"/><circle cx="538" cy="361" r="13" fill="#b3a068" stroke="#827044"/><circle cx="638" cy="336" r="12" fill="#a0aabc" stroke="#778396"/><circle cx="475" cy="345" r="13" fill="#cf886f" stroke="#a7664d"/></g>
+<g fill="#fff" opacity=".36"><circle cx="464" cy="297" r="3"/><circle cx="579" cy="313" r="4"/><circle cx="534" cy="356" r="4"/><circle cx="634" cy="332" r="3"/><circle cx="471" cy="341" r="3"/></g>
+<!-- Small optical sensor schematic. -->
+<path d="M654 191V137H691V190" fill="none" stroke="#73736f" stroke-width="4"/>
+<path d="M636 116L656 108L699 126L678 136Z" fill="url(#plate)" stroke="#6e6e6a"/><path d="M636 116V143L678 161V136Z" fill="url(#metal)" stroke="#7e7e7a"/><path d="M678 136V161L699 151V126Z" fill="#42423e" stroke="#8a8a86"/>
+<ellipse cx="657" cy="137" rx="9" ry="11" fill="#30302e" stroke="#aaa9a5"/><ellipse cx="657" cy="137" rx="4" ry="6" fill="#929e9c"/>
+<path d="M650 151L579 288M668 155L678 304" fill="none" stroke="#a9a9a5" stroke-dasharray="4 5"/>
+<g fill="none" stroke="#989894" stroke-width="1"><path d="M208 211L133 121H70M326 142L366 80H483M675 118L704 78H742M576 366L626 444H704"/></g>
+<g font-family="monospace" font-size="10" letter-spacing="1.5" fill="#737371"><text x="70" y="110">ARM MANIPULATION</text><text x="371" y="70">KINEMATICS</text><text x="622" y="67">VISION</text><text x="628" y="462">COLOR SORTING</text></g>
+</svg>

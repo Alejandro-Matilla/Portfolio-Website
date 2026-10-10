@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Concept illustration of a humanoid robotics system"><title>Concept illustration of a humanoid robotics system</title><defs>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#787876"/><stop offset=".44" stop-color="#50504e"/><stop offset="1" stop-color="#2a2a28"/></linearGradient>
+<linearGradient id="plate" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e6e6e4"/><stop offset=".52" stop-color="#babab8"/><stop offset="1" stop-color="#81817f"/></linearGradient>
+<linearGradient id="dark" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#292927"/><stop offset=".6" stop-color="#4e4e4c"/><stop offset="1" stop-color="#21211f"/></linearGradient>
+<linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffa479"/><stop offset="1" stop-color="#d86438"/></linearGradient>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#9f9f9d" stroke-width=".55" opacity=".23"/></pattern>
+<pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M-2 2L2-2M0 8L8 0M6 10L10 6" stroke="#686866" stroke-width=".7" opacity=".4"/></pattern>
+<filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="9"/></filter>
+<marker id="arrow" viewBox="0 0 7 7" refX="3.5" refY="3.5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L7 3.5 0 7" fill="none" stroke="#868684" stroke-width="1"/></marker>
+</defs><rect width="800" height="520" fill="#eeede8"/><rect width="800" height="520" fill="url(#grid)"/>
+<g stroke="#a6a6a4" stroke-width="1" fill="none" opacity=".7"><path d="M24 51V24H51M749 24H776V51M776 469V496H749M51 496H24V469"/></g>
+<g font-family="monospace" font-size="10" fill="#7c7c7a" letter-spacing="2"><text x="39" y="49">CONCEPT STUDY</text><text x="761" y="482" text-anchor="end">ENGINEERING / DESIGN</text></g><ellipse cx="409" cy="456" rx="163" ry="12" fill="#6e6e6c" opacity=".12" filter="url(#shadow)"/><g transform="translate(110 -30) scale(.68)">
+<g fill="none" stroke="#c0c0be" stroke-width="1" opacity=".38"><path d="M175 70H642M180 690H640M192 71V689"/><path d="M186 82L192 70 198 82M186 678L192 690 198 678"/><path d="M590 73V689" stroke-dasharray="4 7"/><path d="M202 116H587M202 215H587M202 409H587M202 593H587" stroke-dasharray="3 9"/></g>
+<ellipse cx="410" cy="687" rx="163" ry="17" fill="#b0b0ae" opacity=".16" filter="url(#shadow)"/>
+<!-- structure behind the fairings -->
+<g fill="none" stroke="#6a6a68" stroke-linecap="round"><path d="M318 225L281 333 249 427M476 222L530 317 563 399" stroke-width="25"/><path d="M357 405L340 521 304 642M432 405L460 520 482 645" stroke-width="31"/></g>
+<g fill="url(#dark)" stroke="#bbbbb9" stroke-width="1.3"><circle cx="313" cy="227" r="31"/><circle cx="481" cy="228" r="31"/><circle cx="280" cy="337" r="24"/><circle cx="530" cy="316" r="24"/><circle cx="341" cy="525" r="27"/><circle cx="461" cy="525" r="27"/><circle cx="305" cy="641" r="21"/><circle cx="482" cy="646" r="21"/></g>
+<g fill="none" stroke="#d5d5d3" stroke-width="1" opacity=".65"><circle cx="313" cy="227" r="21"/><circle cx="481" cy="228" r="21"/><circle cx="280" cy="337" r="15"/><circle cx="530" cy="316" r="15"/><circle cx="341" cy="525" r="16"/><circle cx="461" cy="525" r="16"/></g>
+<!-- head -->
+<path d="M366 101L418 84 452 105 450 155 420 175 369 157Z" fill="url(#plate)" stroke="#cdcdcb" stroke-width="1.5"/>
+<path d="M418 84L420 128 452 105M420 128L420 175 450 155 452 105" fill="#6d6d6b" stroke="#cdcdcb" stroke-width="1.3"/>
+<path d="M369 110L414 99 416 125 372 133Z" fill="#323230" stroke="#c2c2c0" stroke-width="1"/>
+<path d="M377 119L407 111" stroke="#f18454" stroke-width="3"/>
+<path d="M377 144L409 149M377 150L407 155" fill="none" stroke="#7a7a78" stroke-width="1"/>
+<path d="M391 170V190L422 195 432 182V167" fill="url(#dark)" stroke="#bfbfbd"/>
+<!-- upper torso plates -->
+<path d="M342 190L389 184 438 194 473 210 457 285 411 318 352 296 321 242Z" fill="url(#plate)" stroke="#d4d4d2" stroke-width="1.6"/>
+<path d="M438 194L473 210 457 285 411 318 412 224Z" fill="#5d5d5b" stroke="#bcbcba" stroke-width="1.1"/>
+<path d="M342 190L388 202 409 222 412 303 361 282 335 239Z" fill="#b3b3b1" stroke="#e2e2e0" stroke-width="1.3"/>
+<path d="M345 205L388 215 397 245 357 231Z" fill="#3f3f3d" stroke="#bcbcba"/>
+<path d="M420 223L459 217 449 245 420 253Z" fill="#31312f" stroke="#c5c5c3"/>
+<path d="M369 242L384 247 384 273 369 267Z" fill="url(#orange)"/>
+<g fill="#e3e3e1"><circle cx="344" cy="224" r="2.5"/><circle cx="449" cy="258" r="2.5"/><circle cx="367" cy="278" r="2.5"/></g>
+<!-- shoulder outer covers -->
+<path d="M280 201L310 186 342 199 329 239 301 250 276 229Z" fill="url(#plate)" stroke="#ccccca" stroke-width="1.3"/>
+<path d="M460 196L488 201 513 221 498 251 470 242Z" fill="url(#plate)" stroke="#ccccca" stroke-width="1.3"/>
+<path d="M280 201L303 215 301 250 276 229Z" fill="#6a6a68"/><path d="M486 213L507 226 498 251 477 238Z" fill="#686866"/>
+<path d="M296 213L320 204M477 217L492 225" stroke="#f18454" stroke-width="4"/>
+<!-- abdomen/pelvis -->
+<path d="M359 298L411 317 454 290 448 333 413 354 362 337Z" fill="url(#dark)" stroke="#bfbfbd" stroke-width="1.2"/>
+<path d="M367 312L402 326M367 321L402 335M422 325L443 311M421 335L441 321" stroke="#a7a7a5" stroke-width="3"/>
+<path d="M352 343L409 355 452 338 463 388 432 426 361 416 334 385Z" fill="url(#plate)" stroke="#cfcfcd" stroke-width="1.5"/>
+<path d="M409 355L412 398 432 426 463 388 452 338Z" fill="#6d6d6b" stroke="#c8c8c6"/>
+<path d="M352 343L375 359 366 392 343 385Z" fill="#474745"/><path d="M417 361L444 350 451 378 428 389Z" fill="#424240"/>
+<path d="M374 360L400 365 398 396 375 391Z" fill="#939391" stroke="#d5d5d3"/>
+<!-- upper arm fairings -->
+<path d="M292 256L317 263 298 315 271 307Z" fill="url(#plate)" stroke="#c8c8c6" stroke-width="1.2"/>
+<path d="M501 261L523 250 546 288 525 306Z" fill="url(#plate)" stroke="#c8c8c6" stroke-width="1.2"/>
+<path d="M299 264L306 267 288 306 281 305M512 264L522 260 534 287 526 290" fill="#878785"/>
+<!-- forearms and hands -->
+<path d="M267 350L293 361 273 415 245 407 246 387Z" fill="url(#plate)" stroke="#c8c8c6" stroke-width="1.3"/>
+<path d="M521 340L548 326 575 377 552 394 531 365Z" fill="url(#plate)" stroke="#c8c8c6" stroke-width="1.3"/>
+<path d="M267 362L278 366 263 401 251 397M539 343L546 338 563 372 553 377" fill="#8a8a88"/>
+<path d="M249 414L267 421 260 450 244 459 231 447 235 423Z" fill="url(#dark)" stroke="#bfbfbd"/>
+<path d="M559 393L577 382 594 402 592 418 575 429 563 417Z" fill="url(#dark)" stroke="#bfbfbd"/>
+<path d="M239 432L254 438M237 439L252 445M565 406L580 398M570 414L585 406" stroke="#bbbbb9" stroke-width="1.3"/>
+<!-- thigh fairings -->
+<path d="M349 425L382 429 370 497 339 504 321 478Z" fill="url(#plate)" stroke="#cbcbc9" stroke-width="1.4"/>
+<path d="M422 433L448 418 477 484 462 503 434 490Z" fill="url(#plate)" stroke="#cbcbc9" stroke-width="1.4"/>
+<path d="M352 438L368 440 357 482 340 486Z" fill="#71716f" stroke="#c1c1bf"/>
+<path d="M436 436L445 432 464 476 453 486Z" fill="#6e6e6c" stroke="#c1c1bf"/>
+<!-- knee caps -->
+<path d="M322 517L342 507 365 520 360 543 338 554 317 537Z" fill="#969694" stroke="#d6d6d4" stroke-width="1.2"/>
+<path d="M443 513L464 506 482 523 475 546 453 550 438 532Z" fill="#969694" stroke="#d6d6d4" stroke-width="1.2"/>
+<path d="M329 526L346 521M449 524L467 520" stroke="#f18454" stroke-width="4"/>
+<!-- lower leg fairings -->
+<path d="M327 557L352 564 327 620 301 623 291 610Z" fill="url(#plate)" stroke="#cbcbc9" stroke-width="1.3"/>
+<path d="M455 562L475 555 495 616 477 629 460 613Z" fill="url(#plate)" stroke="#cbcbc9" stroke-width="1.3"/>
+<path d="M333 568L343 571 323 609 310 609M464 568L470 565 485 611 477 617" fill="#6c6c6a"/>
+<!-- feet -->
+<path d="M288 648L315 634 332 651 328 675 285 693 245 682 248 666Z" fill="url(#dark)" stroke="#d5d5d3" stroke-width="1.5"/>
+<path d="M473 642L493 642 519 663 548 672 544 689 497 692 467 678Z" fill="url(#dark)" stroke="#d5d5d3" stroke-width="1.5"/>
+<path d="M248 666L285 678 328 657M285 678V693M476 661L500 677 548 672M500 677L497 692" fill="none" stroke="#929290" stroke-width="1.2"/>
+<g fill="none" stroke="#f18454" stroke-width="1.1" opacity=".8"><path d="M417 105L507 77H551"/><circle cx="417" cy="105" r="3"/><path d="M361 377L277 458H207"/><circle cx="361" cy="377" r="3"/><path d="M466 524L565 550H632"/><circle cx="466" cy="524" r="3"/></g>
+<g font-family="monospace" font-size="10" fill="#c7c7c5" letter-spacing="2"><text x="511" y="67">PERCEPTION</text><text x="207" y="477">ACTUATION</text><text x="567" y="569">LOCOMOTION</text></g>
+</g><g font-family="monospace" font-size="11" fill="#6b6b69" letter-spacing="2"><text x="51" y="429">HUMANOID</text><text x="51" y="448">SYSTEM STUDY</text></g></svg>
