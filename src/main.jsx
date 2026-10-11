@@ -6,6 +6,7 @@ import App from "./App.jsx";
 import "./styles.css";
 import "./pages.css";
 import "./carousel.css";
+import "./photos.css";
 
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
