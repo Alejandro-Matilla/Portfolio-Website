@@ -15,7 +15,7 @@ args = parser.parse_args()
 root = Path(__file__).resolve().parents[1]
 base_url = 'http://portfolio-preview.test/' if args.offline_preview else args.url.rstrip('/') + '/'
 project_pages = [
-    ('adaptable-morphology', 'Task-Adaptive Humanoid', 'August 2026 — Present'),
+    ('adaptable-morphology', 'Adaptable Morphology Robot', 'August 2026 — Present'),
     ('pneumatic-actuators', 'Smart Pneumatic Valve', 'September 2025 — May 2026'),
     ('nan-011', 'Nan-011', 'June 2026 — Present'),
     ('cnc-plotter', 'Multicolor CNC Plotter', 'September 2025 — May 2026'),
@@ -24,15 +24,6 @@ project_pages = [
     ('rbe-3002', 'RBE 3002 — Autonomous Navigation', None),
     ('rbe-3001', 'RBE 3001 — Vision-Guided Ball Sorting', None),
 ]
-project_gallery_counts = {
-    'adaptable-morphology': 4,
-    'pneumatic-actuators': 3,
-    'variable-contact-sole': 1,
-    'nan-011': 1,
-    'rbe-2001': 2,
-    'rbe-3001': 2,
-    'rbe-3002': 2,
-}
 
 
 def expect_route(page, route):
@@ -42,7 +33,6 @@ def expect_route(page, route):
 
 
 def expect_featured(page, title=None):
-    expect(page).to_have_url(base_url + '#/')
     carousel = page.get_by_role('region', name='Featured projects', exact=True)
     expect(carousel).to_be_visible()
     expect(carousel).to_have_attribute('aria-roledescription', 'carousel')
@@ -70,8 +60,8 @@ def expect_home(page):
     expect(page.locator('h1')).to_have_text(re.compile(r'^Alejandro\s*Matilla\s*Calvo\.?$'))
     expect(page.locator('#about')).to_contain_text('Worcester Polytechnic Institute')
     expect(page.locator('#about')).to_contain_text('2028')
-    expect_featured(page, 'Task-Adaptive Humanoid')
-    expect(page.locator('#featured')).to_contain_text('Task-Adaptive Humanoid')
+    expect_featured(page, 'Adaptable Morphology Robot')
+    expect(page.locator('#featured')).to_contain_text('Adaptable Morphology Robot')
     expect(page.locator('#featured')).to_contain_text('Smart Pneumatic Valve')
     expect(page.locator('#documents')).to_have_count(1)
     expect(page.get_by_role('link', name='Download resume', exact=True)).to_have_count(1)
@@ -178,34 +168,6 @@ def expect_assets_and_layout(page):
     assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), 'Horizontal page overflow'
 
 
-def expect_gallery(page, slug, open_full_size=False):
-    links = page.locator('.project-gallery .gallery-image')
-    count = project_gallery_counts.get(slug, 0)
-    expect(links).to_have_count(count)
-    for link in links.all():
-        expect(link).to_have_attribute('target', '_blank')
-        assert link.evaluate('element => element.href === element.querySelector("img").currentSrc')
-    if open_full_size:
-        assert count > 0
-        link = links.first
-        image = link.locator('img')
-        dimensions = image.evaluate('element => [element.naturalWidth, element.naturalHeight]')
-        expected_url = link.evaluate('element => element.href')
-        route = page.url
-        with page.expect_popup() as popup_info:
-            link.click()
-        popup = popup_info.value
-        popup.wait_for_load_state('domcontentloaded')
-        expect(popup).to_have_url(expected_url)
-        popup.wait_for_function(
-            'document.images.length === 1 && document.images[0].complete && document.images[0].naturalWidth > 0')
-        assert popup.locator('img').evaluate(
-            'element => [element.naturalWidth, element.naturalHeight]') == dimensions
-        popup.close()
-        expect(page).to_have_url(route)
-    return count
-
-
 def screenshot(page, filename):
     if args.screenshots:
         args.screenshots.mkdir(parents=True, exist_ok=True)
@@ -252,22 +214,17 @@ with sync_playwright() as playwright:
     screenshot(page, 'desktop-project.png')
     page.get_by_role('link', name='amc. — Alejandro Matilla Calvo, home', exact=True).click()
     expect_home(page)
-    page.locator('#featured').get_by_role('link', name=re.compile(r'^Explore Task-Adaptive Humanoid,')).click()
+    page.locator('#featured').get_by_role('link', name=re.compile(r'^Explore Adaptable Morphology Robot,')).click()
     expect_project(page, *project_pages[0])
 
     menu_navigate(page, 'Projects', '/projects')
     expect_projects(page)
     expect_assets_and_layout(page)
     screenshot(page, 'desktop-projects.png')
-    gallery_total = 0
-    gallery_project_total = 0
     for slug, title, period in project_pages:
         page.get_by_role('link', name=re.compile(r'^Explore ' + re.escape(title) + ',')).click()
         expect_project(page, slug, title, period)
         expect_assets_and_layout(page)
-        count = expect_gallery(page, slug, open_full_size=slug == 'adaptable-morphology')
-        gallery_total += count
-        gallery_project_total += bool(count)
         # Pasting the detail URL and refreshing both preserve the project page.
         page.goto(base_url + '#/projects/' + slug, wait_until='networkidle')
         expect_project(page, slug, title, period)
@@ -275,7 +232,6 @@ with sync_playwright() as playwright:
         expect_project(page, slug, title, period)
         menu_navigate(page, 'Projects', '/projects')
         expect_projects(page)
-    assert (gallery_project_total, gallery_total) == (7, 15)
 
     menu_navigate(page, 'Research publications', '/publications')
     expect(page.locator('main')).to_contain_text(re.compile(r'(first publication|no publications|nothing published)', re.I))
@@ -307,7 +263,7 @@ with sync_playwright() as playwright:
     carousel.get_by_role('button', name='Previous featured project', exact=True).click()
     expect_featured(page, 'Smart Pneumatic Valve')
     carousel.get_by_role('button', name='Next featured project', exact=True).click()
-    expect_featured(page, 'Task-Adaptive Humanoid')
+    expect_featured(page, 'Adaptable Morphology Robot')
     expect_menu(page)
     expect_assets_and_layout(page)
     screenshot(page, 'mobile.png')
@@ -319,17 +275,12 @@ with sync_playwright() as playwright:
     expect_project(page, *project_pages[3])
     expect_assets_and_layout(page)
     screenshot(page, 'mobile-project.png')
-    menu_navigate(page, 'Projects', '/projects')
-    page.get_by_role('link', name=re.compile(r'^Explore Nan-011,')).click()
-    expect_project(page, *project_pages[2])
-    expect_assets_and_layout(page)
-    expect_gallery(page, 'nan-011', open_full_size=True)
     menu_navigate(page, 'Research publications', '/publications')
     expect_assets_and_layout(page)
     menu_navigate(page, 'Home', '/')
     expect_home(page)
     assert not errors, errors
-    print('PASS: mobile navigation, menu focus/dismissal, full-size galleries, publication empty state, assets, no overflow or runtime/HTTP errors')
+    print('PASS: mobile navigation, menu focus/dismissal, publication empty state, assets, no overflow or runtime/HTTP errors')
 
     # A separate media context verifies timed looping without slowing the smoke test.
     motion_context = browser.new_context(viewport={'width': 1440, 'height': 1000}, reduced_motion='no-preference')
@@ -356,10 +307,10 @@ with sync_playwright() as playwright:
         expect_featured(motion_page, title)
 
     motion_page.goto(base_url + '#/', wait_until='networkidle')
-    carousel = expect_featured(motion_page, 'Task-Adaptive Humanoid')
+    carousel = expect_featured(motion_page, 'Adaptable Morphology Robot')
     expect(carousel.get_by_role('button', name='Pause slideshow', exact=True)).to_be_visible()
     advance_rotation('Smart Pneumatic Valve')
-    advance_rotation('Task-Adaptive Humanoid')
+    advance_rotation('Adaptable Morphology Robot')
 
     # Explicit pause remains in effect after keyboard focus and pointer leave.
     carousel.get_by_role('button', name='Pause slideshow', exact=True).click()
@@ -367,13 +318,13 @@ with sync_playwright() as playwright:
     motion_page.evaluate('document.activeElement?.blur()')
     motion_page.mouse.move(0, 0)
     advance_slideshow(6000)
-    expect_featured(motion_page, 'Task-Adaptive Humanoid')
+    expect_featured(motion_page, 'Adaptable Morphology Robot')
     carousel.get_by_role('button', name='Next featured project', exact=True).click()
     advance_slideshow(700)
     expect_featured(motion_page, 'Smart Pneumatic Valve')
     carousel.get_by_role('button', name='Previous featured project', exact=True).click()
     advance_slideshow(700)
-    expect_featured(motion_page, 'Task-Adaptive Humanoid')
+    expect_featured(motion_page, 'Adaptable Morphology Robot')
     carousel.get_by_role('button', name='Play slideshow', exact=True).click()
     expect(carousel.get_by_role('button', name='Pause slideshow', exact=True)).to_be_visible()
     motion_page.evaluate('document.activeElement?.blur()')
@@ -386,10 +337,10 @@ with sync_playwright() as playwright:
     expect_featured(motion_page, 'Smart Pneumatic Valve')
     motion_page.evaluate('document.activeElement?.blur()')
     motion_page.mouse.move(0, 0)
-    advance_rotation('Task-Adaptive Humanoid')
+    advance_rotation('Adaptable Morphology Robot')
     carousel.locator('.carousel-slide[data-active="true"] .project-card').hover()
     advance_slideshow(6000)
-    expect_featured(motion_page, 'Task-Adaptive Humanoid')
+    expect_featured(motion_page, 'Adaptable Morphology Robot')
     motion_page.mouse.move(0, 0)
     advance_rotation('Smart Pneumatic Valve')
     assert not errors, errors
@@ -404,7 +355,7 @@ with sync_playwright() as playwright:
     smooth_page = smooth_context.new_page()
     smooth_page.on('pageerror', lambda error: errors.append(str(error)))
     smooth_page.goto(base_url + '#/', wait_until='networkidle')
-    smooth_carousel = expect_featured(smooth_page, 'Task-Adaptive Humanoid')
+    smooth_carousel = expect_featured(smooth_page, 'Adaptable Morphology Robot')
     smooth_carousel.get_by_role('button', name='Pause slideshow', exact=True).click()
     track = smooth_carousel.locator('.carousel-track')
     width = smooth_carousel.locator('.carousel-slides').evaluate('element => element.getBoundingClientRect().width')
@@ -430,9 +381,9 @@ with sync_playwright() as playwright:
 
     smooth_move('Next featured project', -1, 'Smart Pneumatic Valve', -2)
     # Both wrap directions travel to their neighboring clone before resetting to the real slide.
-    smooth_move('Next featured project', -1, 'Task-Adaptive Humanoid', -1)
+    smooth_move('Next featured project', -1, 'Adaptable Morphology Robot', -1)
     smooth_move('Previous featured project', 1, 'Smart Pneumatic Valve', -2)
-    smooth_move('Previous featured project', 1, 'Task-Adaptive Humanoid', -1)
+    smooth_move('Previous featured project', 1, 'Adaptable Morphology Robot', -1)
     assert not errors, errors
     print('PASS: smooth horizontal next/previous transitions and seamless forward/backward wraparound')
     smooth_context.close()

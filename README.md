@@ -13,7 +13,7 @@ The burger menu is available in the top-right corner on desktop and mobile. Each
 
 Featured cards link directly to the same individual project pages used by the projects collection. The fruit harvester and teaching/experience section are not shown. Experience and skills data are retained for future use. The original uploaded resume remains unchanged.
 
-The featured carousel slides horizontally every three seconds, with a seamless loop, previous/next arrows embedded in the pictures, touch swipes, and a pause/play control. Its frame stays stable as captions vary, and the slide count follows the featured projects. It pauses during hover or keyboard interaction and starts paused for viewers who prefer reduced motion. The burger options use compact rows, and the home hero has one “Explore my work” action; contact remains in the footer. Nan-011 is a quadruped robot and now uses the supplied quadruped CAD image. The research section includes the task-adaptive humanoid, pneumatic valve, and variable contact-area humanoid sole.
+The featured carousel slides horizontally every three seconds, with a seamless loop, previous/next arrows, touch swipes, and a pause/play control. Its frame stays stable as captions vary, and the slide count follows the featured projects. It pauses during hover or keyboard interaction and starts paused for viewers who prefer reduced motion. The burger options use compact rows, and the home hero has one “Explore my work” action; contact remains in the footer. Nan-011 is a quadruped robot; its existing concept illustration is retained until project photos arrive. The research section includes a variable contact-area humanoid sole; dates and detailed results can be added when supplied.
 
 ## Develop
 
@@ -60,11 +60,10 @@ The browser smoke test uses Python Playwright and Chromium at `/usr/bin/chromium
 
 Edit `src/data.js` for profile copy, project descriptions, categories, featured work, and publication entries.
 
-The supplied project PDF provides 22 authentic photographs, CAD views, analyses, and sketches for seven projects. These appear as seven primary images and 15 supplementary gallery frames. Gallery links open the original image at full size in a new tab, including in the offline preview. Photos preserve the complete hardware view in contained frames. The CNC plotter still uses a labeled concept illustration, and the home portrait remains a placeholder.
+No personal or project photographs have been supplied yet. The SVGs are labeled **concept illustrations**, not representations of the actual hardware. The initials tile is an explicit portrait placeholder.
 
 - Put a portrait in `public/images/portrait.jpg` and set `profile.portrait` to `'/images/portrait.jpg'`. It appears in the home and about sections.
 - Put project photos in `public/images/`. Add `image: '/images/your-project.jpg'` and a descriptive `imageAlt` to its project object. Photos replace conceptual artwork in both cards and project pages; the concept caption disappears automatically.
-- Add an `imageCaption` for the primary image and optional `gallery: [{ src: '/images/detail.jpg', alt: 'Describe the image.', caption: 'Explain the design detail.' }]` entries for additional figures. Keep the primary image out of `gallery` to avoid repeating it.
 - Add projects to the `projects` array, with a stable URL-safe `id` and `category: 'research'`, `'personal'`, or `'coursework'`. Category sections and counts update automatically. Set `featured: true` to include any project in the home-page carousel; it adapts to additional featured entries.
 - Add optional `sections: [{ heading: 'Design process', body: ['First paragraph.', 'Second paragraph.'] }]` to a project for longer explanations. Only supplied text is rendered; no case-study results are invented.
 - Add real publications to `publications` using `{ id, title, authors, venue, year, href }`. The page switches from its empty state to the publication list automatically. `href` is optional; supply a real paper URL when available.
@@ -77,7 +76,6 @@ The supplied project PDF provides 22 authentic photographs, CAD views, analyses,
 - `src/styles.css`: original visual design and responsive sections
 - `src/pages.css`: page layouts, menu drawer, full-name branding, details
 - `src/carousel.css`: centered featured carousel and responsive controls
-- `src/photos.css`: complete photo frames, primary captions, and project galleries
 - `src/data.js`: editable resume-grounded content and publication list
 - `src/assets.js`: shared asset resolution for hosted and offline versions
 - `public/images/`: concept illustrations and future photos

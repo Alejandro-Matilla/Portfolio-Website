@@ -100,7 +100,7 @@ function ProjectCard({ project, featured = false, index }) {
   return (
     <article className={`project-card ${featured ? "featured-card" : ""}`}>
       <a
-        className={`project-image art-${project.art} ${project.image ? "project-photo" : ""}`}
+        className={`project-image art-${project.art}`}
         href={projectHref(project)}
         aria-label={`Explore ${project.title}, ${imageIndex}${project.image ? "" : ", Concept illustration"}`}
       >
@@ -884,50 +884,6 @@ function PublicationsPage() {
   );
 }
 
-function ProjectGallery({ project }) {
-  if (!project.gallery?.length) return null;
-  return (
-    <section
-      className="project-gallery container"
-      aria-labelledby="gallery-title"
-    >
-      <SectionLabel number="03">PROJECT IMAGES</SectionLabel>
-      <h2 id="gallery-title">Project gallery</h2>
-      <p className="gallery-intro">
-        CAD, analysis, and project photos from my project documentation.
-      </p>
-      <div className="gallery-grid">
-        {project.gallery.map((photo, index) => (
-          <figure key={photo.src}>
-            <a
-              className="gallery-image"
-              href={publicAsset(photo.src)}
-              target="_blank"
-              rel="noreferrer"
-              aria-label={`View full-size ${photo.alt} (opens in a new tab)`}
-            >
-              <img
-                src={publicAsset(photo.src)}
-                alt={photo.alt}
-                loading="lazy"
-              />
-              <span className="gallery-expand" aria-hidden="true">
-                <Icon size={18} />
-              </span>
-            </a>
-            <figcaption>
-              <span className="gallery-index">
-                {String(index + 1).padStart(2, "0")}
-              </span>
-              <p>{photo.caption}</p>
-            </figcaption>
-          </figure>
-        ))}
-      </div>
-    </section>
-  );
-}
-
 function ProjectPage({ project }) {
   const currentIndex = projects.findIndex((item) => item.id === project.id);
   const nextProject = projects[(currentIndex + 1) % projects.length];
@@ -956,28 +912,19 @@ function ProjectPage({ project }) {
         </div>
       </div>
       <div className="detail-layout container">
-        <figure className="detail-media">
-          <div
-            className={`detail-visual art-${project.art} ${project.image ? "project-photo" : ""}`}
-          >
-            <img
-              src={publicAsset(project.image || `/images/${project.art}.svg`)}
-              alt={
-                project.image
-                  ? project.imageAlt || project.title
-                  : `Concept illustration of ${project.title}`
-              }
-            />
-            {!project.image && (
-              <span className="art-note">Concept illustration</span>
-            )}
-          </div>
-          {project.imageCaption && (
-            <figcaption className="detail-image-caption">
-              {project.imageCaption}
-            </figcaption>
+        <div className={`detail-visual art-${project.art}`}>
+          <img
+            src={publicAsset(project.image || `/images/${project.art}.svg`)}
+            alt={
+              project.image
+                ? project.imageAlt || project.title
+                : `Concept illustration of ${project.title}`
+            }
+          />
+          {!project.image && (
+            <span className="art-note">Concept illustration</span>
           )}
-        </figure>
+        </div>
         <div className="detail-summary">
           <p className="eyebrow">THE IDEA</p>
           <h2>Project overview</h2>
@@ -1041,7 +988,6 @@ function ProjectPage({ project }) {
           </a>
         </aside>
       </div>
-      <ProjectGallery project={project} />
       <div className="project-page-footer container">
         <a className="home-featured-link" href="#/projects">
           <Icon
